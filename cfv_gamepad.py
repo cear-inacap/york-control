@@ -1,7 +1,7 @@
 #!/usr/bin/env python 
 
 #****************************
-# joystick.py
+# cfv2_gamepad.py
 # Librería de funciones para leer datos desde un joystick genérico tipo Xbox.
 # Requiere la librería inputs (pip install inputs)
 # Código fuente e instrucciones de uso: http://github.com/cear-inacap/york-control

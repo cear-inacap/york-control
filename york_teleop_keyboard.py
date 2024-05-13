@@ -5,7 +5,7 @@
 # Control de movimiento para el robot YORK utilizando el teclado.
 #
 # Autor: Claudio Morales Díaz @cmoralesd
-# Código fuente e instrucciones de uso: http://github.com/york-control
+# Código fuente e instrucciones de uso: http://github.com/cear-inacap/york-control
 # Versión: 1.0 - mayo de 2024
 #***************************************
 
@@ -83,17 +83,17 @@ key_listener.start()
 # envía al robot las instrucciones recibidas por teclado
 while key_listener.is_alive() and york.is_connected():
 	# se prepara el vector de velocidades deseadas
-	motor_vel = [
+	robot_vel = [
 		round(vx * linear_speed, 2),
 		round(vy * linear_speed, 2),
 		round(omega_r * angular_speed, 2)
 		]
     # se envía el vector de velocidades al robot
-	ret = york.move(motor_vel)
+	ret = york.move(robot_vel)
 
     # se imprime el resultado
 	if ret != -1:
-		print('vx, vy, omega_r :', motor_vel)
+		print('vx, vy, omega_r :', robot_vel)
 	else:
 		print('no se pudo enviar los datos al robot')
 

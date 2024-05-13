@@ -5,7 +5,7 @@
 # Control de movimiento para el robot YORK utilizando un joystick genérico.
 #
 # Autor: Claudio Morales Díaz @cmoralesd
-# Código fuente e instrucciones de uso: http://github.com/york-control
+# Código fuente e instrucciones de uso: http://github.com/cear-inacap/york-control
 # Versión: 1.0 - mayo 2024
 #***************************************
 
@@ -30,6 +30,7 @@ info = """
 ---------------------------
 Conecte el joystick para continuar...
 
+Presiona <control> + c para salir
 """
 
 # despliega mensaje inicial
